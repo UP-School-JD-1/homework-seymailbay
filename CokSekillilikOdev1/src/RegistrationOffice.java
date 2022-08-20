@@ -48,36 +48,4 @@ public class RegistrationOffice {
 		return st;
 	}
 
-	public void registerStudent(Student st) {
-		if (st instanceof UnderGraduateStudent) {
-			UnderGraduateStudent undergraduateStudent = (UnderGraduateStudent) st;
-			System.out.println(undergraduateStudent);
-			undergraduateStudent.register();
-			undergraduateStudent.study();
-		} else if (st instanceof MasterStudent) {
-			MasterStudent masterStudent = (MasterStudent) st;
-			System.out.println(masterStudent);
-			masterStudent.register();
-			masterStudent.meetWithAdvisor();
-			masterStudent.study();
-			masterStudent.writeThesis();
-		} else if (st instanceof PhdStudent) {
-			PhdStudent phdStudent = (PhdStudent) st;
-			System.out.println(phdStudent);
-			phdStudent.register();
-			phdStudent.meetWithAdvisor();
-			phdStudent.study();
-			phdStudent.writeThesis();
-			if (phdStudent.isQualifyingExamTaken()) {
-				phdStudent.writePaper();
-			}
-		} else if (st instanceof VocationalStudent) {
-			VocationalStudent vocationalStudent = (VocationalStudent) st;
-			System.out.println(vocationalStudent);
-			vocationalStudent.register();
-			vocationalStudent.study();
-		}
-
-	}
-
-}
+	
