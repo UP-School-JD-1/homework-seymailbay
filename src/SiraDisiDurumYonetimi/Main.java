@@ -23,7 +23,7 @@ public class Main {
         SiraDisiDurumYonetimi.Engineer engineer2 = new Engineer("Asya", 15, 150);
         SiraDisiDurumYonetimi.Manager manager1 = new Manager("Kezban", 20, 5000);
 
-        double salary = engineer2.calculateSalary();
+        double salary = manager1.calculateSalary();
 
 
 
