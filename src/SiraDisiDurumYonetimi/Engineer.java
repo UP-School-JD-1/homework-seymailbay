@@ -1,43 +1,16 @@
-package SiraDisiDurumYonetimi;
+package SiradisiDurumYont;
 
-public class Engineer extends Employee{
+import SiraDisiDurumYonetimi.Employee;
 
-    public Engineer(String department, String name, int no) {
-        super(department, name, no);
+public class Engineer extends Employee {
+
+    public Engineer(String name, int workDay, int dailyWage) {
+        super(name, workDay, dailyWage);
     }
 
-    @Override
-    public String getDepartment() {
-        return super.getDepartment();
-    }
-
-    @Override
-    public void setDepartment(String department) {
-        super.setDepartment(department);
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
-
-    @Override
-    public int getNo() {
-        return super.getNo();
-    }
-
-    @Override
-    public void setNo(int no) {
-        super.setNo(no);
-    }
 
     @Override
     public int calculateSalary() {
-        return BASE_SALARY*2;
+        return super.calculateSalary();
     }
 }

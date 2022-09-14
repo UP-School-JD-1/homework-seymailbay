@@ -1,13 +1,9 @@
-package SiraDisiDurumYonetimi;
+package SiradisiDurumYont;
 
-public class SalaryPaidOnBankException extends Exception{
+public class SalaryPaidOnBankException extends Exception {
+
+
 
     public SalaryPaidOnBankException(String message) {
-        super(message);
-    }
-
-    @Override
-    public String getMessage() {
-        return "Salary paid on bank ";
-    }
-}
+            super(message);
+}}

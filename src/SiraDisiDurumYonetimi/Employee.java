@@ -1,47 +1,49 @@
-package SiraDisiDurumYonetimi;
+package SiradisiDurumYont;
 
-public class Employee {
+    public class Employee {
 
-    private String department;
-    private String name;
-    private int no;
+        private String name;
+        private int workDay;
 
-    public static final int BASE_SALARY = 4000;
+        private int dailyWage;
 
 
-    public Employee(String department, String name, int no) {
-        this.department = department;
-        this.name = name;
-        this.no = no;
+        public Employee(String name, int workDay, int dailyWage) {
+            this.name = name;
+            this.workDay = workDay;
+            this.dailyWage = dailyWage;
+        }
+
+        public int calculateSalary(){
+
+            return (getWorkDay()*getDailyWage());
+
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getWorkDay() {
+            return workDay;
+        }
+
+        public void setWorkDay(int workDay) {
+            this.workDay = workDay;
+        }
+
+        public int getDailyWage() {
+            return dailyWage;
+        }
+
+        public void setDailyWage(int dailyWage) {
+            this.dailyWage = dailyWage;
+        }
     }
 
 
-    public String getDepartment() {
-        return department;
-    }
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getNo() {
-        return no;
-    }
-
-    public void setNo(int no) {
-        this.no = no;
-    }
-
-    public int calculateSalary() {
-
-        return 0;
-    }
-}
