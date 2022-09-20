@@ -2,26 +2,22 @@ package SiraDisiDurumYonetimi;
 
 public class Employee {
 
-    private String department;
     private String name;
-    private int no;
+    private int workDay;
 
-    public static final int BASE_SALARY = 4000;
+    private int dailyWage;
 
 
-    public Employee(String department, String name, int no) {
-        this.department = department;
+    public Employee(String name, int workDay, int dailyWage) {
         this.name = name;
-        this.no = no;
+        this.workDay = workDay;
+        this.dailyWage = dailyWage;
     }
 
+    public int calculateSalary(){
 
-    public String getDepartment() {
-        return department;
-    }
+        return (getWorkDay()*getDailyWage());
 
-    public void setDepartment(String department) {
-        this.department = department;
     }
 
     public String getName() {
@@ -32,16 +28,20 @@ public class Employee {
         this.name = name;
     }
 
-    public int getNo() {
-        return no;
+    public int getWorkDay() {
+        return workDay;
     }
 
-    public void setNo(int no) {
-        this.no = no;
+    public void setWorkDay(int workDay) {
+        this.workDay = workDay;
     }
 
-    public int calculateSalary() {
+    public int getDailyWage() {
+        return dailyWage;
+    }
 
-        return 0;
+    public void setDailyWage(int dailyWage) {
+        this.dailyWage = dailyWage;
     }
 }
+

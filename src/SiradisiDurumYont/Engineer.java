@@ -1,6 +1,8 @@
-package SiraDisiDurumYonetimi;
+package SiradisiDurumYont;
 
-public class Engineer extends Employee{
+import SiraDisiDurumYonetimi.Employee;
+
+public class Engineer extends Employee {
 
     public Engineer(String name, int workDay, int dailyWage) {
         super(name, workDay, dailyWage);

@@ -2,25 +2,47 @@ package SiraDisiDurumYonetimi;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void checkSalary(double salary) throws Exception {
 
+        if (salary > 7000) {
 
-        Manager manager1 = new Manager("Manager", "Seyma", 12);
+            throw new Exception();
 
-        Engineer engineer1 = new Engineer("Engineer", "Nejla", 23);
+        } else {
 
-
-        try{
-
-            double salary = manager1.calculateSalary();
-            System.out.println(manager1.getName() + " " + salary);
+            System.out.println("Your payment paid cash");
         }
-
-        catch (Exception e){
-
-            System.out.print(e.getMessage());
-        }
-
-
     }
+
+        public static void main(String[] args)  {
+
+        Engineer engineer1 = new Engineer("Kemal",20,200);
+        Engineer engineer2 = new Engineer("Asya",15,150);
+        Manager manager1= new Manager("Kezban",20,5000);
+
+        double salary = manager1.calculateSalary();
+
+
+            try{
+
+                checkSalary(salary);
+            }
+
+            catch (Exception e){
+
+                System.out.println("Your salary paid on bank" + e) ;
+            }
+        }
+
+
+
+
+
+
+
+
 }
+
+
+
+

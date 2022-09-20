@@ -1,4 +1,6 @@
-package SiraDisiDurumYonetimi;
+package SiradisiDurumYont;
+
+
 
 public class Manager extends Employee {
     public Manager(String name, int workDay, int dailyWage) {
@@ -11,4 +13,3 @@ public class Manager extends Employee {
 
     }
 }
-
