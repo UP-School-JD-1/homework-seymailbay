@@ -22,6 +22,9 @@ public class RegistrationOffice {
 
 
 
+
+
+
     switch(studentStatus){
         case 1:
 

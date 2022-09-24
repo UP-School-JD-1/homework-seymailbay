@@ -1,4 +1,4 @@
-package FProgramlama;
+package FProgramlama.Odev1;
 
 import java.util.function.IntConsumer;
 
