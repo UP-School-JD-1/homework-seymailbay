@@ -1,7 +1,5 @@
 package Collections.Odev2;
 
-import Collections.Odev1.Student;
-
 import java.util.*;
 
 public class Rehber {
@@ -10,7 +8,7 @@ public class Rehber {
         HashMap<Kisiler,ArrayList<AdresveTel>> rehber = new HashMap<>();
         Kisiler kisi1=new Kisiler("Baris","Orhan");
         Kisiler kisi2=new Kisiler("Ceyda","Yilmaz");
-        Kisiler kisi3=new Kisiler("Arif","Kasap");
+        Kisiler kisi3=new Kisiler("Arif","Orhan");
         Kisiler kisi4=new Kisiler("Melisa","İlbay");
 
         AdresveTel kisi1AdresTel1= new AdresveTel("İzmir","5073821920");
@@ -25,7 +23,7 @@ public class Rehber {
         kisi2adresveTel.add(kisi2AdresTel1);
         kisi2adresveTel.add(kisi2AdresTel2);
 
-        AdresveTel kisi3AdresTel1= new AdresveTel("Balıkesir","5032930934");
+        AdresveTel kisi3AdresTel1= new AdresveTel("İzmir","5032930934");
         ArrayList<AdresveTel> kisi3adresveTel= new ArrayList<>();
         kisi3adresveTel.add(kisi3AdresTel1);
 
@@ -50,7 +48,7 @@ public class Rehber {
 
         System.out.println();
         System.out.println("Sadece isim siralaması: ");
-        Collections.sort(sortedKeys,new NameComparator());
+        Collections.sort(sortedKeys,new İsimComparator());
         System.out.println(sortedKeys);
         System.out.println();
 
@@ -61,11 +59,8 @@ public class Rehber {
             System.out.println(entry.getKey() + ", Adres ve Telefon : " + entry.getValue());
         }
 
-
-
-
-
-
+        KisiBulmaServisi f=new KisiBulmaServisi();
+        f.Search("İzmir",sorted);
 
     }
 }

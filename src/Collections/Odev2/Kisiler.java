@@ -36,4 +36,6 @@ public class Kisiler implements Comparable<Kisiler> {
     public int compareTo(Kisiler o) {
         return this.isim.compareTo(o.isim);
     }
+
+
 }

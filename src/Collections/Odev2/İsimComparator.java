@@ -2,7 +2,7 @@ package Collections.Odev2;
 
 import java.util.Comparator;
 
-public class NameComparator implements Comparator<Kisiler> {
+public class İsimComparator implements Comparator<Kisiler> {
 
     @Override
     public int compare(Kisiler o1, Kisiler o2) {
